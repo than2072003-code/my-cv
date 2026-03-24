@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Professional CV</title>
+    <style>
+        /* Phần trang trí giao diện */
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: #f0f2f5; margin: 0; display: flex; justify-content: center; align-items: center; min-height: 100vh; }
+        .cv-card { background: white; width: 90%; max-width: 500px; border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.1); overflow: hidden; text-align: center; padding-bottom: 30px; }
+        
+        /* Phần header màu xanh */
+        .header { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); height: 120px; }
+        
+        /* Cách chèn và xử lý ảnh PNG */
+        .avatar { 
+            width: 150px; height: 150px; 
+            border-radius: 50%; /* Làm ảnh hình tròn */
+            border: 5px solid white; 
+            margin-top: -75px; /* Đẩy ảnh lên trên phần header */
+            object-fit: cover; /* Giúp ảnh không bị móp méo */
+            background-color: #eee;
+        }
+
+        h1 { margin: 15px 0 5px; color: #333; }
+        p { color: #777; margin: 0 20px 20px; line-height: 1.6; }
+        
+        .info-tag { display: inline-block; background: #e1e8ff; color: #4466ff; padding: 5px 15px; border-radius: 20px; font-size: 14px; margin: 5px; font-weight: bold; }
+        
+        .contact-btn { 
+            display: inline-block; margin-top: 20px; padding: 12px 30px; 
+            background: #4466ff; color: white; text-decoration: none; 
+            border-radius: 25px; transition: 0.3s; 
+        }
+        .contact-btn:hover { background: #3355ee; transform: translateY(-3px); }
+    </style>
+</head>
+<body>
+
+    <div class="cv-card">
+        <div class="header"></div>
+        
+        <img src="avatar.png" alt="Ảnh đại diện" class="avatar">
+        
+        <h1>Nguyễn Văn A</h1>
+        <p>Sinh viên ngành Điện tử Viễn thông | Đam mê IoT & Lập trình Web</p>
+        
+        <div>
+            <span class="info-tag">ESP32</span>
+            <span class="info-tag">Node.js</span>
+            <span class="info-tag">MQTT</span>
+            <span class="info-tag">AutoCAD</span>
+        </div>
+
+        <p style="margin-top: 20px; font-size: 14px;">
+            "Chào mừng bạn đến với trang cá nhân của mình. Mình hiện đang học tập và làm việc trên các dự án IoT sử dụng ESP32 và tích hợp hệ thống điều khiển qua Web."
+        </p>
+
+        <a href="mailto:email-cua-ban@gmail.com" class="contact-btn">Liên hệ với mình</a>
+    </div>
+
+</body>
+</html>
