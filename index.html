@@ -3,46 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Professional CV</title>
+    <title>Nguyễn Công Thận - CV</title>
     <style>
-        /* Phần trang trí giao diện */
         body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: #f0f2f5; margin: 0; display: flex; justify-content: center; align-items: center; min-height: 100vh; }
         .cv-card { background: white; width: 90%; max-width: 500px; border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.1); overflow: hidden; text-align: center; padding-bottom: 30px; }
-        
-        /* Phần header màu xanh */
         .header { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); height: 120px; }
-        
-        /* Cách chèn và xử lý ảnh PNG */
+
+        /* PHẦN QUAN TRỌNG: BIẾN ELIP THÀNH HÌNH TRÒN CHUẨN */
         .avatar { 
-            width: 150px; height: 150px; 
-            border-radius: 50%; /* Làm ảnh hình tròn */
+            width: 150px;  /* Cố định chiều rộng */
+            height: 150px; /* Cố định chiều cao bằng chiều rộng để tạo hình vuông */
+            border-radius: 50%; /* Bo tròn 50% từ hình vuông sẽ ra hình tròn */
             border: 5px solid white; 
-            margin-top: -75px; /* Đẩy ảnh lên trên phần header */
-            object-fit: cover; /* Giúp ảnh không bị móp méo */
+            margin-top: -75px; 
+            object-fit: cover; /* CỰC KỲ QUAN TRỌNG: Giúp ảnh không bị méo, tự động cắt trung tâm */
             background-color: #eee;
+            display: inline-block; /* Đảm bảo kích thước được áp dụng chính xác */
         }
 
         h1 { margin: 15px 0 5px; color: #333; }
         p { color: #777; margin: 0 20px 20px; line-height: 1.6; }
-        
         .info-tag { display: inline-block; background: #e1e8ff; color: #4466ff; padding: 5px 15px; border-radius: 20px; font-size: 14px; margin: 5px; font-weight: bold; }
         
+        .contact-container { display: flex; gap: 10px; justify-content: center; margin: 0 20px; }
         .contact-btn { 
-            display: inline-block; margin-top: 20px; padding: 12px 30px; 
-            background: #4466ff; color: white; text-decoration: none; 
-            border-radius: 25px; transition: 0.3s; 
+            flex: 1; margin-top: 20px; padding: 12px 0; 
+            color: white; text-decoration: none; 
+            border-radius: 25px; transition: 0.3s; font-weight: bold; font-size: 14px;
         }
-        .contact-btn:hover { background: #3355ee; transform: translateY(-3px); }
+        .contact-btn:hover { filter: brightness(1.1); transform: translateY(-3px); }
     </style>
 </head>
 <body>
 
     <div class="cv-card">
         <div class="header"></div>
-        <div class="avatar-container">
-       <img src="avatar.png" alt="Nguyễn Công Thận" class="avatar">
-        </div>
-        <h1>N.C.Thận</h1>
+        
+        <img src="avatar.png" alt="Nguyễn Công Thận" class="avatar">
+        
         <h1>Nguyễn Công Thận</h1>
         <p>Sinh viên ngành Công nghệ Kỹ thuật Điện tử - Viễn thông</p>
         
@@ -53,16 +51,16 @@
             <span class="info-tag">Python - VisualStudio</span>
         </div>
 
-        <p style="margin-top: 20px; font-size: 14px;">
+        <p style="margin-top: 20px; font-size: 14px; padding: 0 20px;">
             "Chào mừng bạn đến với trang cá nhân của mình. Mình hiện đang học tập tại SGU và làm việc tự do như: làm Coffee, bảo trì thi công lắp đặt các thiết bị điện, cảm biến và decorate sự kiện"
         </p>
-<div class="contact-container">
+
+        <div class="contact-container">
             <a href="tel:0702991406" class="contact-btn" style="background-color: #2ecc71;">
                 📞 Gọi cho mình
             </a>
-
             <a href="mailto:than2072003@gmail.com" class="contact-btn" style="background-color: #e74c3c;">
-                ✉️ Hoặc gửi Email
+                ✉️ Gửi Email
             </a>
         </div>
     </div>
